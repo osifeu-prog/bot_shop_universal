@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Buy My Shop - שער כניסה לנכס הדיגיטלי המניב שלך</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="רוכשים נכס דיגיטלי ב-39₪ ומקבלים לינק אישי להפצה + מטבעות SLH. כל רכישה דרך הלינק שלך מתועדת ומניבה הכנסה!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Buy My Shop - הנכס הדיגיטלי המניב" />
+  <meta property="og:description" content="רכשו נכס דיגיטלי ב-39₪ והתחילו להרוויח מהפצות + קבלו מטבעות SLH. לינק אישי, מעקב הפניות, ושקיפות מלאה." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://slh-nft.com/" />
+  <meta property="og:image" content="https://slh-nft.com/assets/start_banner.jpg" />
+
+  <!-- Web3 Integration -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+  
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-container">
+        <img src="assets/start_banner.jpg" alt="Buy My Shop" class="logo">
+        <div class="logo-glow"></div>
+      </div>
+      <h1 class="main-title">Buy My Shop</h1>
+      <p class="subtitle">הנכס הדיגיטלי המניב שלך מתחיל כאן</p>
+      <p class="highlight-text">רוכשים פעם אחת - מרוויחים לכל החיים + מקבלים מטבעות SLH!</p>
+      
+      <!-- SLH Token Info -->
+      <div class="token-banner">
+        <div class="token-info">
+          <span class="token-icon">🪙</span>
+          <span class="token-text">כל רכישה מזכה ב-<strong>0.0878 SLH</strong> (שווי 39₪)</span>
+        </div>
+        <div class="token-price">
+          <span>1 SLH = 444₪</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('home')">🏠 בית</button>
+      <button class="tab-btn" onclick="showTab('asset')">💎 הנכס הדיגיטלי</button>
+      <button class="tab-btn" onclick="showTab('vision')">🚀 החזון</button>
+      <button class="tab-btn" onclick="showTab('login')">🔐 התחברות & ארנק</button>
+      <button class="tab-btn" onclick="showTab('community')">👥 קהילה</button>
+    </div>
+
+    <!-- Home Tab -->
+    <div id="home-tab" class="tab-content active">
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <div class="card glow-card">
+          <h2>💎 מה זה הנכס הדיגיטלי?</h2>
+          <p>זהו שער כניסה אישי לקהילת עסקים פעילה. לאחר רכישה ב-39₪ תקבל:</p>
+          <ul class="feature-list">
+            <li>🎁 <strong>מטבעות SLH</strong> - 0.0878 SLH (שווי 39₪)</li>
+            <li>🔗 לינק אישי להפצה</li>
+            <li>💰 אפשרות למכור נכסים נוספים</li>
+            <li>👥 גישה לקבוצת משחק כללית</li>
+            <li>📊 מערכת הפניות מתגמלת</li>
+            <li>👑 מעקב אחרי כל הרכישות דרך הלינק שלך</li>
+          </ul>
+        </div>
+        
+        <div class="card glow-card">
+          <h2>🚀 איך עובד התהליך?</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>רוכשים</h3>
+              <p>נכס דיגיטלי ב-39₪</p>
+              <div class="step-token">+0.0878 SLH</div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>מקבלים</h3>
+              <p>לינק אישי + מטבעות SLH</p>
+              <div class="step-token">🎁</div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>מפיצים</h3>
+              <p>הלינק שלך לאחרים</p>
+              <div class="step-token">📤</div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <h3>מרוויחים</h3>
+              <p>מטבעות + כסף מכל רכישה</p>
+              <div class="step-token">💰</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLH Token Benefits -->
+      <div class="card glow-card token-benefits">
+        <h2>🪙 יתרונות מטבע SLH</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">💎</div>
+            <h3>ערך אמיתי</h3>
+            <p>1 SLH = 444₪</p>
+            <small>שווי קבוע ומתועד</small>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🚀</div>
+            <h3>פוטנציאל צמיחה</h3>
+            <p>מטבע אמיתי בבלוקצ'יין</p>
+            <small>ניתן למכירה וקניה</small>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">👑</div>
+            <h3>זכויות בעלות</h3>
+            <p>אתם הבעלים</p>
+            <small>שליטה מלאה במטבעות</small>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">🌐</div>
+            <h3>נזילות</h3>
+            <p>ניתן לסחור</p>
+            <small>בבורסות ובין חברים</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="features-grid">
+        <div class="feature-card glow-card">
+          <div class="feature-icon">🔗</div>
+          <h3>לינק אישי</h3>
+          <p>כל לינק הוא ייחודי ומתועד במערכת</p>
+        </div>
+        
+        <div class="feature-card glow-card">
+          <div class="feature-icon">💰</div>
+          <h3>הכנסה פסיבית</h3>
+          <p>מרוויחים מכל רכישה דרך הלינק שלך</p>
+        </div>
+        
+        <div class="feature-card glow-card">
+          <div class="feature-icon">👥</div>
+          <h3>קהילה תומכת</h3>
+          <p>גישה לקבוצת עסקים פעילה</p>
+        </div>
+        
+        <div class="feature-card glow-card">
+          <div class="feature-icon">📊</div>
+          <h3>מעקב מלא</h3>
+          <p>רואים בדיוק מי הגיע ואיך</p>
+        </div>
+      </div>
+
+      <!-- CTA Section -->
+      <div class="cta-section">
+        <h2>מוכן להתחיל להרוויח?</h2>
+        <p>הנכס הדיגיטלי שלך מחכה לך + בונוס מטבעות SLH!</p>
+        <div class="price">39₪</div>
+        <div class="token-bonus">
+          <span class="bonus-amount">+0.0878 SLH</span>
+          <span class="bonus-text">(שווי 39₪)</span>
+        </div>
+        <p>תשלום חד-פעמי - הכנסה לכל החיים + מטבעות אמיתיים!</p>
+        
+        <div style="margin: 30px 0;">
+          <a href="https://t.me/Buy_My_Shop_bot" class="btn glow-btn" target="_blank">
+            🚀 התחל בבוט הטלגרם
+          </a>
+          <br>
+          <small style="opacity: 0.8;">לחץ כאן כדי להיכנס לבוט ולהתחיל בתהליך</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asset Tab -->
+    <div id="asset-tab" class="tab-content">
+      <div class="card glow-card">
+        <h2>💎 הנכס הדיגיטלי - ההזדמנות העסקית שלך!</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+          <div>
+            <h3>🏗 מה זה בעצם?</h3>
+            <p>נכס דיגיטלי הוא 'שער כניסה' אישי שאתה קונה פעם אחת ב-39₪ ומקבל:</p>
+            <ul class="feature-list">
+              <li>🪙 0.0878 מטבעות SLH (שווי 39₪)</li>
+              <li>🔗 לינק אישי משלך</li>
+              <li>💼 זכות למכור נכסים נוספים</li>
+              <li>🌐 גישה למערכת שלמה</li>
+              <li>👥 קהילת עסקים תומכת</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3>💸 איך מרוויחים?</h3>
+            <p>מודל ההכנסה הפסיבית:</p>
+            <ul class="feature-list">
+              <li>💳 אתה רוכש נכס ב-39₪ + מקבל SLH</li>
+              <li>🔗 מקבל לינק אישי להפצה</li>
+              <li>👥 כל אדם שקונה דרך הלינק שלך - הרכישה מתועדת</li>
+              <li>💰 הנכס שלך ממשיך להניב הכנסות + מטבעות</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); border-left: 4px solid var(--primary);">
+          <h3>🔄 מודל מכירה חוזרת + מטבעות SLH</h3>
+          <p>אתה לא רק 'משתמש' - אתה 'בעל נכס' + בעל מטבעות!</p>
+          <ul class="feature-list">
+            <li>💼 יכול למכור נכסים נוספים לאחרים</li>
+            <li>📊 כל רכישה נוספת מתועדת בשרשרת ההפניה</li>
+            <li>🪙 מקבל מטבעות SLH על כל מכירה</li>
+            <li>🌐 בניית רשת עסקית אישית</li>
+            <li>💰 הכנסה חוזרת לאורך זמן + צבירת מטבעות</li>
+          </ul>
+        </div>
+
+        <!-- SLH Token Details -->
+        <div class="card glow-card" style="background: linear-gradient(135deg, #fffbeb, #fef3c7); border: 2px solid #f59e0b;">
+          <h3>🪙 פרטי מטבע SLH</h3>
+          <div class="token-details">
+            <div class="token-detail">
+              <span class="detail-label">שם המטבע:</span>
+              <span class="detail-value">SLH Token</span>
+            </div>
+            <div class="token-detail">
+              <span class="detail-label">בלוקצ'יין:</span>
+              <span class="detail-value">BNB Smart Chain (BEP-20)</span>
+            </div>
+            <div class="token-detail">
+              <span class="detail-label">חוזה:</span>
+              <span class="detail-value">0xACb0A09414CEA1C879c67bB7A877E4e19480f022</span>
+            </div>
+            <div class="token-detail">
+              <span class="detail-label">שווי:</span>
+              <span class="detail-value">1 SLH = 444₪</span>
+            </div>
+            <div class="token-detail">
+              <span class="detail-label">בונוס רכישה:</span>
+              <span class="detail-value">0.0878 SLH (39₪)</span>
+            </div>
+          </div>
+          <p class="token-note">💡 המטבעות ניתנים למכירה וקניה בבורסות ובין חברים. אתם בעלי המטבעות ובעלי שליטה מלאה בהם!</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="https://t.me/Buy_My_Shop_bot" class="btn glow-btn" target="_blank" style="background: var(--secondary);">
+            💼 רכוש נכס דיגיטלי + קבל SLH עכשיו!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vision Tab -->
+    <div id="vision-tab" class="tab-content">
+      <div class="vision-hero">
+        <h1>🚀 Human Capital Protocol</h1>
+        <p class="subtitle" style="color: white; font-size: 1.4rem;">הפרוטוקול שהופך אנשים להון אמיתי עם מטבע SLH</p>
+      </div>
+
+      <div class="card glow-card">
+        <h2>💫 מה זה SLH במשפט אחד?</h2>
+        <p style="font-size: 1.2rem; line-height: 1.8;">
+          <strong>SLH הוא פרוטוקול הון אנושי שמחבר בין משפחות, קהילות ומומחים לרשת כלכלית אחת</strong> – עם בוטים, חנויות, טוקן SLH, אקדמיה, משחק, ו־Exchange – כך שכל אדם יכול להפוך לעסק, למומחה ולצומת כלכלי, מתוך הטלפון שלו.
+        </p>
+      </div>
+
+      <div class="vision-grid">
+        <div class="vision-card glow-card">
+          <h3>🎯 החזון ארוך-טווח</h3>
+          <ul class="feature-list">
+            <li>🪙 להפוך כל אדם ומשפחה ליחידת כלכלה עצמאית עם SLH</li>
+            <li>🌐 לבנות רשת מסחר גלובלית מבוזרת</li>
+            <li>🚀 ליצור Meta-Economy: שכבת-על טכנולוגית</li>
+            <li>💎 להפוך את SLH לסטנדרט עולמי למדידת מומחיות</li>
+          </ul>
+        </div>
+
+        <div class="vision-card glow-card">
+          <h3>🏗 האקו-סיסטם המלא</h3>
+          <ul class="feature-list">
+            <li>🤖 Bots Layer - בוטי טלגרם</li>
+            <li>🛒 Commerce Layer - חנויות ומרקטפלייס</li>
+            <li>⛓️ Blockchain Layer - BSC + TON עם מטבע SLH</li>
+            <li>🎓 Expertise Layer - Pi Index</li>
+            <li>📚 Academy Layer - למידה ומשחק</li>
+            <li>💱 Exchange Layer - מסחר ונזילות</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ecosystem-layer">
+        <h2>🔄 שכבות המערכת עם SLH</h2>
+        
+        <div class="vision-card glow-card">
+          <h3>🤖 Bots Layer (Telegram First)</h3>
+          <p>בוטי הרשמה, תשלום, חנויות, משחק NIFTII, SLHTON, Gateway Onboarding. כל משתמש מקבל בוט אישי שמתפקד כדף נחיתה, חנות, שירות לקוחות וסוכן עסקי.</p>
+        </div>
+
+        <div class="vision-card glow-card">
+          <h3>🛒 Commerce Layer – SLH Shops & Marketplace</h3>
+          <p>חנויות דיגיטליות לכל משתמש/משפחה/קהילה (No-Code). מכירת שירותים, מוצרים, NFT, כרטיסים ופתיחת "קניון אישי" עם תשלום ב-SLH.</p>
+        </div>
+
+        <div class="vision-card glow-card">
+          <h3>⛓️ Blockchain Layer – BSC + TON עם SLH Token</h3>
+          <p>טוקן SLH חי על BNB Smart Chain (BEP-20). אינטגרציה ל־TON (ארנקים מהירים, חיבור טבעי לטלגרם). בעתיד: Multi-Chain (Polygon, Base וכו').</p>
+          <div class="contract-info">
+            <strong>חוזה SLH:</strong> 
+            <code>0xACb0A09414CEA1C879c67bB7A877E4e19480f022</code>
+          </div>
+        </div>
+
+        <div class="vision-card glow-card">
+          <h3>🎓 Expertise Layer – Pi Index</h3>
+          <p>מנגנון דירוג מומחיות: פעילות, מכירות, תרומה לקהילה, למידה, המלצות, ביצועים. Pi Index מחובר ישירות ל־SLH ומגדיר את "שווי המומחה" ברשת.</p>
+        </div>
+      </div>
+
+      <div class="card glow-card" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7);">
+        <h2>🌟 Human Capital Protocol עם SLH</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8;">
+          <strong>SLH אינו עוד "אפליקציה" אלא Meta-Protocol:</strong> כמו HTTP / Email לכלכלת משפחה וקהילה. אנשים הם האלגוריתם, המערכת רק מודדת ומתגמלת ב-SLH.
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+          <span class="protocol-badge">ידע = הון = SLH</span>
+          <span class="protocol-badge">משפחות = נכסים</span>
+          <span class="protocol-badge">קהילות = רשתות</span>
+          <span class="protocol-badge">אנשים = פרוטוקול</span>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="https://t.me/Buy_My_Shop_bot" class="btn glow-btn" target="_blank" style="background: var(--primary);">
+          🚀 הצטרף למהפכה הכלכלית עם SLH
+        </a>
+      </div>
+    </div>
+
+    <!-- Login & Wallet Tab -->
+    <div id="login-tab" class="tab-content">
+      <div class="card glow-card telegram-login-section">
+        <h2>🔐 התחברות לניהול הנכס הדיגיטלי + ארנק SLH</h2>
+        <p>התחבר עם Telegram כדי לגשת לניהול הנכס הדיגיטלי שלך ולקבל את מטבעות ה-SLH</p>
+        
+        <!-- Telegram Login Widget -->
+        <div style="margin: 30px 0;">
+          <script async 
+            src="https://telegram.org/js/telegram-widget.js?22" 
+            data-telegram-login="Buy_My_Shop_bot" 
+            data-size="large" 
+            data-onauth="onTelegramAuth(user)" 
+            data-request-access="write">
+          </script>
+        </div>
+
+        <!-- User Info Display -->
+        <div id="user-info" class="user-info">
+          <h3>👤 מחובר כמשתמש:</h3>
+          <div id="user-details" class="user-details"></div>
+          <button onclick="logout()" class="logout-btn">🚪 התנתק</button>
+        </div>
+
+        <!-- Payment Section -->
+        <div id="payment-section" style="display: none; margin-top: 30px;">
+          <h3>💳 תשלום עבור הנכס הדיגיטלי + מטבעות SLH</h3>
+          <div class="payment-header">
+            <div class="price-display">39₪</div>
+            <div class="token-bonus-display">
+              <span class="bonus-amount">+0.0878 SLH</span>
+              <span class="bonus-text">(שווי 39₪)</span>
+            </div>
+          </div>
+          
+          <div class="payment-methods">
+            <div class="payment-method glow-card" onclick="selectPaymentMethod('bank')">
+              <div class="payment-icon">🏦</div>
+              <h4>העברה בנקאית</h4>
+              <p>בנק הפועלים</p>
+            </div>
+            <div class="payment-method glow-card" onclick="selectPaymentMethod('paybox')">
+              <div class="payment-icon">💎</div>
+              <h4>פיבוקס</h4>
+              <p>תשלום מיידי</p>
+            </div>
+            <div class="payment-method glow-card" onclick="selectPaymentMethod('bit')">
+              <div class="payment-icon">💎</div>
+              <h4>ביט</h4>
+              <p>אשראי</p>
+            </div>
+            <div class="payment-method glow-card" onclick="selectPaymentMethod('paypal')">
+              <div class="payment-icon">💎</div>
+              <h4>פייפאל</h4>
+              <p>בינלאומי</p>
+            </div>
+            <div class="payment-method glow-card" onclick="selectPaymentMethod('telegram')">
+              <div class="payment-icon">💎</div>
+              <h4>טלגרם (TON)</h4>
+              <p>מטבעות</p>
+            </div>
+          </div>
+          
+          <div id="payment-details">
+            <!-- Payment details will be shown here -->
+          </div>
+          
+          <div id="payment-status" style="display: none;">
+            <!-- Payment status will be shown here -->
+          </div>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div id="dashboard-section" style="display: none; margin-top: 30px;">
+          <div style="text-align: center;">
+            <h3>🎉 הנכס הדיגיטלי שלך מאושר!</h3>
+            <p>כעת אתה יכול לגשת לדשבורד האישי שלך עם ארנק SLH:</p>
+            <a href="dashboard/" class="btn glow-btn" style="background: var(--secondary);">
+              📊 מעבר לדשבורד האישי + ארנק SLH
+            </a>
+          </div>
+        </div>
+
+        <!-- Wallet Connection -->
+        <div id="wallet-section" style="margin-top: 40px; display: none;">
+          <h3>🦊 חיבור ארנק Web3 לקבלת SLH</h3>
+          <p>חבר את הארנק שלך כדי לקבל את מטבעות ה-SLH שלך:</p>
+          
+          <div class="wallet-options">
+            <button class="btn glow-btn" onclick="connectMetaMask()" style="background: #f6851b;">
+              <img src="assets/crypto/metamask.png" alt="MetaMask" style="height: 24px; margin-left: 10px;">
+              חיבור MetaMask
+            </button>
+            <button class="btn glow-btn" onclick="connectWalletConnect()" style="background: #3b99fc;">
+              🔗 WalletConnect
+            </button>
+          </div>
+          
+          <div id="wallet-info" style="display: none; margin-top: 20px;">
+            <div class="wallet-connected">
+              <h4>✅ ארנק מחובר</h4>
+              <p id="wallet-address"></p>
+              <div class="wallet-balance">
+                <span>יתרת SLH:</span>
+                <span id="slh-balance">0.0000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefits -->
+        <div style="margin-top: 40px; text-align: right;">
+          <h3>🎯 מה תקבל לאחר ההתחברות?</h3>
+          <ul class="feature-list">
+            <li>🪙 מטבעות SLH בשווי 39₪</li>
+            <li>🔗 גישה לניהול הנכס הדיגיטלי שלך</li>
+            <li>📊 מעקב אחרי ההפניות שלך</li>
+            <li>👑 צפייה בסטטיסטיקות אישיות</li>
+            <li>👥 קישור להצטרפות לקהילת העסקים</li>
+            <li>🦊 ארנק אישי למטבעות SLH</li>
+            <li>💎 תמיכה טכנית אישית</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Tab -->
+    <div id="community-tab" class="tab-content">
+      <div class="card glow-card">
+        <h2>👥 קהילת Buy My Shop + SLH</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0;">
+          <div>
+            <h3>🤝 למה להצטרף לקהילה?</h3>
+            <ul class="feature-list">
+              <li>🪙 שיתופי פעולה עסקיים עם SLH</li>
+              <li>📚 הדרכות ושיטות עבודה</li>
+              <li>🔧 תמיכה טכנית צמודה</li>
+              <li>🚀 עדכונים על פיצ'רים חדשים</li>
+              <li>🌐 רשת קשרים עסקית</li>
+              <li>💎 מסחר במטבעות SLH</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3>🚀 מה בתוך הקהילה?</h3>
+            <ul class="feature-list">
+              <li>📢 קבוצת Telegram פעילה</li>
+              <li>🎥 הדרכות וידאו</li>
+              <li>💡 טיפים לשיווק דיגיטלי</li>
+              <li>❓ סשני שאלות ותשובות</li>
+              <li>🎁 הטבות בלעדיות</li>
+              <li>🪙 קבוצת מסחר SLH</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card glow-card" style="background: linear-gradient(135deg, #f0fdf4, #dcfce7);">
+          <h3>🎁 הטבות לחברי הקהילה</h3>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">💰</div>
+              <h4>הנחות</h4>
+              <p>על נכסים נוספים</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🎯</div>
+              <h4>הדרכות</h4>
+              <p>בלעדיות</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">👨‍💼</div>
+              <h4>ליווי</h4>
+              <p>אישי</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">📈</div>
+              <h4>כלים</h4>
+              <p>מתקדמים</p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">🪙</div>
+              <h4>בונוס SLH</h4>
+              <p>לחברים פעילים</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+          <a href="https://t.me/Buy_My_Shop_bot" class="btn glow-btn" target="_blank" style="background: var(--primary);">
+            🚀 הצטרף לקהילה + קבל SLH עכשיו!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="card glow-card faq-section">
+      <h2>❓ שאלות נפוצות</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">מה בדיוק אני קונה ב-39₪?</div>
+        <div class="faq-answer">
+          <p>אתה קונה נכס דיגיטלי + מקבל מטבעות SLH:</p>
+          <ul class="feature-list">
+            <li>🪙 0.0878 מטבעות SLH (שווי 39₪)</li>
+            <li>🔗 לינק הפצה ייחודי</li>
+            <li>🌐 גישה מלאה למערכת</li>
+            <li>💼 אפשרות למכור נכסים נוספים</li>
+            <li>🔧 תמיכה טכנית</li>
+            <li>👥 גישה לקהילה</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">איך אני מרוויח מהנכס?</div>
+        <div class="faq-answer">
+          <p>כל אדם שרוכש נכס דרך הלינק האישי שלך - הרכישה מתועדת לזכותך. אתה מקבל קרדיט על ההפניה ומשתתף בהכנסות + מקבל מטבעות SLH נוספים.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">מה אני יכול לעשות עם מטבעות SLH?</div>
+        <div class="faq-answer">
+          <p>מטבעות SLH הם אמיתיים וניתן:</p>
+          <ul class="feature-list">
+            <li>💱 למכור בבורסות</li>
+            <li>👥 לסחור עם חברים</li>
+            <li>🛒 לשלם עבור שירותים בפרויקט</li>
+            <li>📈 להחזיק כהשקעה</li>
+            <li>🎁 להעביר כמתנות</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">האם אני יכול למכור כמה נכסים?</div>
+        <div class="faq-answer">
+          <p>כן! לאחר רכישת הנכס הראשון, אתה יכול למכור נכסים נוספים לאחרים דרך הלינק האישי שלך + לקבל מטבעות SLH על כל מכירה.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">איך מחברים את הארנק?</div>
+        <div class="faq-answer">
+          <p>פשוט מאוד:</p>
+          <ul class="feature-list">
+            <li>1. התקן MetaMask</li>
+            <li>2. הוסף את BSC Network (ראה הוראות)</li>
+            <li>3. לחץ על "חיבור MetaMask"</li>
+            <li>4. אשר את החיבור</li>
+            <li>5. המטבעות יופיעו אוטומטית</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final CTA -->
+    <div style="text-align: center; margin: 50px 0;">
+      <h2>💼 הנכס שלך מחכה + מטבעות SLH!</h2>
+      <p>הצטרף למאות בעלי נכסים שכבר מרוויחים ומחזיקים ב-SLH</p>
+      <a href="https://t.me/Buy_My_Shop_bot" class="btn glow-btn" target="_blank" style="background: var(--secondary);">
+        📲 התחל עכשיו בבוט + קבל SLH!
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>Buy My Shop - הנכס הדיגיטלי המניב שלך עם מטבע SLH</p>
+      <p>© 2024 כל הזכויות שמורות | <a href="admin/" style="color: var(--primary);">פאנל ניהול</a></p>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/payment.js"></script>
+  <script src="js/wallet.js"></script>
+  <script src="js/web3.js"></script>
+</body>
+</html>

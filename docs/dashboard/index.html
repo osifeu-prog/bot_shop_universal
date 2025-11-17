@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - Buy My Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👤 דשבורד אישי</h1>
+            <p>ניהול הנכס הדיגיטלי שלך</p>
+        </div>
+
+        <div class="business-card">
+            <h2>📇 כרטיס ביקור דיגיטלי</h2>
+            <div id="personal-qr" class="qr-code">
+                <!-- QR code will be generated here -->
+            </div>
+            <p id="personal-link-display" style="word-break: break-all; margin: 20px 0;"></p>
+            <button class="btn" onclick="copyPersonalLink()">📋 העתק לינק</button>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>⚙️ הגדרות אישיות</h3>
+            
+            <div class="form-group">
+                <label>🏦 חשבון בנק לקבלת תשלומים:</label>
+                <input type="text" id="bank-account" placeholder="בנק, סניף, חשבון" class="form-input">
+            </div>
+            
+            <div class="form-group">
+                <label>👥 לינק לקבוצה שלך:</label>
+                <input type="url" id="group-link" placeholder="https://t.me/yourgroup" class="form-input">
+            </div>
+            
+            <div class="form-group">
+                <label>💰 מחיר להפצה (ש"ח):</label>
+                <input type="number" id="custom-price" value="39" min="39" class="form-input">
+            </div>
+            
+            <button class="btn" onclick="saveSettings()">💾 שמור הגדרות</button>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>📊 סטטיסטיקות</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number" id="total-clicks">0</div>
+                    <div>👆 לחיצות על הלינק</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-sales">0</div>
+                    <div>💰 מכירות</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="total-earnings">0₪</div>
+                    <div>💸 רווחים</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>👥 קבוצות הפרויקט</h3>
+            <p>הצטרף לקבוצות כדי להתעדכן ולתמוך:</p>
+            <div style="margin: 20px 0;">
+                <a href="https://chat.whatsapp.com/CCKTtCu9BFPHZTZC6L9Bdh" class="btn" target="_blank" style="background: #25D366;">
+                    📱 קבוצת וואטסאפ
+                </a>
+                <a href="https://t.me/+HIzvM8sEgh1kNWY0" class="btn" target="_blank" style="background: #0088cc;">
+                    📢 קבוצת טלגרם
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>
