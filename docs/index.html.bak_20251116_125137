@@ -11,11 +11,9 @@
   <meta property="og:title" content="SLHNET  שער הכניסה לנכס הדיגיטלי שלך" />
   <meta property="og:description" content="שלם 39  פעם אחת, קבל גישה לקבוצת עסקים, חנות דיגיטלית אישית, לינק ריפרל ועתיד של סטייקינג וטוקני SLH." />
   <meta property="og:url" content="https://slh-nft.com/" />
-  <meta property="og:image" content="https://slh-nft.com/assets/start_banner.jpg" />
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://slh-nft.com/static/slh-og.svg" />
 
-  <link rel="icon" href="https://slh-nft.com/assets/start_banner.jpg" type="image/svg+xml" />
+  <link rel="icon" href="https://slh-nft.com/static/slh-og.svg" type="image/svg+xml" />
 
   <style>
     body {
@@ -288,4 +286,3 @@
   </div>
 </body>
 </html>
-

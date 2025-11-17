@@ -51,3 +51,29 @@ export BOT_TOKEN="123:ABC"
 export WEBHOOK_URL="https://your-public-url/webhook"
 
 uvicorn main:app --host 0.0.0.0 --port 8000
+
+
+---
+
+## SLHNET – פרויקט בית ואקו־סיסטם
+
+המאגר הזה משמש כ"פרויקט בית" (Home Platform) לאקו־סיסטם הרחב יותר של SLH / SLHNET:
+
+- בוט השער (`/start`) – גיוס משתמשים, תשומת לב ותשלומים.
+- API פנימי וחיצוני – עבור בוטים/שירותים נוספים בעתיד.
+- לוגיקת רפרלים, Rewards וניקוד (Leaderboards).
+- אתר סטטי ב-`docs/` שמתפרסם דרך GitHub Pages וקשור לדומיין: `https://slh-nft.com/`.
+
+### מסמכי אפיון (Specs)
+
+בנתיב `docs/specs/` יש:
+
+- `social-logic.md` – תיאור שכבות המערכת הקיימת.
+- `social-motivation-network.md` – תוכנית מפורטת לרשת חברתית מוטיבציונית, מבוססת ניקוד, רפרלים ומומחים.
+- `platform-home-architecture.md` – איך המאגר הזה הופך ל-Home Platform עבור כל שאר הפרויקטים.
+
+מכאן אפשר להמשיך לפתח:
+
+- שכבת Social מלאה מעל `social_api.py`
+- חיבור ללימוד, אקדמיה ו-Experts
+- הרחבת סט ה-APIs עבור בוטים ואפליקציות חיצוניות.
